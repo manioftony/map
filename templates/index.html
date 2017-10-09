@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Map Functionality</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+
+
+<script>
+$(function(){
+    $('select').change(function() {
+        console.log($(this).val())
+        var data = $(this).val();
+        document.getElementById("mani").src="/static/img/"+data+".jpg";
+    });
+});
+</script>
+
+
+
+<style>
+.selcls { 
+    padding: 9px; 
+    border: solid 1px #517B97; 
+    outline: 0; 
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #CAD9E3), to(#FFFFFF)); 
+    background: -moz-linear-gradient(top, #FFFFFF, #CAD9E3 1px, #FFFFFF 25px); 
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+
+    } 
+
+.selectboxcss{
+    padding-left: 70px;
+}
+
+
+
+</style>
+
+
+
+<body>
+
+<div class="jumbotron text-center">
+  <h1>India District Map Page</h1>
+  <p>We can show images for all state map here</p> 
+</div>
+
+
+<div class="selectboxcss">
+
+<select name="mani" id="myselect" class="selcls">
+    <option value="tamilnadu">tamilnadu</option>
+    <option value="andhrapradesh">andhrapradesh</option>
+    <option value="gujarat">gujarat</option>
+    <option value="Karnataka">Karnataka</option>
+    <option value="kerala">kerala</option>
+    <option value="madhyapradesh">madhyapradesh</option>
+    <option value="maharashtra">maharashtra</option>
+    <option value="rajasthan">rajasthan</option>
+    <option value="tamilnadu">tamilnadu</option>
+    <option value="telangana">telangana</option>
+    <option value="uttarpradesh">uttarpradesh</option>
+</select>
+</div>
+
+
+
+
+
+
+<div style="text-align: center;">
+
+    <img src="/static/img/tamilnadu.jpg" id="mani" width="800" height="600">
+
+</div>
+
+<!-- 
+
+<select name="mani" id="myselect">
+    <option value="tamilnadu">tamilnadu</option>
+    <option value="andhrapradesh">andhrapradesh</option>
+    <option value="gujarat">gujarat</option>
+    <option value="Karnataka">Karnataka</option>
+    <option value="kerala">kerala</option>
+    <option value="madhyapradesh">madhyapradesh</option>
+    <option value="maharashtra">maharashtra</option>
+    <option value="rajasthan">rajasthan</option>
+    <option value="tamilnadu">tamilnadu</option>
+    <option value="telangana">telangana</option>
+    <option value="uttarpradesh">uttarpradesh</option>
+
+
+
+
+
+    <option value="Viluppuram">Viluppuram</option>
+    <option value="Tirunelveli">Tirunelveli</option>
+    <option value="Tiruvannamalai">Tiruvannamalai</option>
+    <option value="Vellore">Vellore</option>
+    <option value="Dindigul">Dindigul</option>
+    <option value="Erode">6</option>
+    <option value="Salem">7</option>
+    <option value="Tirupur">8</option>
+    <option value="Krishnagiri">9</option>
+    <option value="Pudukkottai">10</option>
+    <option value="Coimbatore"></option>
+    <option value="Thoothukudi"></option>
+    <option value="Dharmapuri"></option>
+    <option value="Tiruchirappalli"></option>
+    <option value="Kanchipuram"></option>
+    <option value="Virudhunagar"></option>
+    <option value="Ramanathapuram"></option>
+    <option value="Sivaganga"></option>
+    <option value="Cuddalore"></option>
+    <option value="Madurai"></option>
+    <option value="Tiruvallur"></option>
+    <option value="Thanjavur"></option>
+    <option value="Namakkal"></option>
+    <option value="Karur"></option>
+    <option value="Theni"></option>
+    <option value="Udagamandalam"></option>
+    <option value="Nagapattinam"></option>
+    <option value="Tiruvarur"></option>
+    <option value="Ariyalur"></option>
+    <option value="Perambalur"></option>
+    <option value="Nagercoil"></option>
+    <option value="Chennai"></option>
+</select>
+ -->
+
+
+
+<!-- 
+    <form id="form1" runat="server">
+        <input type='file' id="imgInp" />
+        <img id="blah" src="#" alt="your image" />
+    </form>
+
+ -->
+
+
+
+</body>
+</html>
